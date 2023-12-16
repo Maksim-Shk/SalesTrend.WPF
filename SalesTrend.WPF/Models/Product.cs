@@ -15,6 +15,9 @@ public class Product
     public int ProductId { get; set; }
     public string Article { get; set; } = null!;
     public string Name { get; set; } = null!;
+    public int ProductTypeId { get; set; }
+
+    public ProductType ProductType { get; set; } = null!;
 
     public ICollection<PriceListProduct>? PriceListProducts { get; set; }
     public ICollection<ClientOrderProduct>? ClientOrderProducts { get; set; }

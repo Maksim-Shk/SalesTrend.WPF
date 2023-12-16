@@ -124,7 +124,7 @@ public class DataGenerator
             Name = fullname.Name,
             Surname = fullname.Surname,
             Patronymic = fullname.Patronymic,
-            AddressId = addressId,
+            //AddressId = addressId,
             TaxNumber = _random.Next(100000000, 999999999),
             PassportSerial = _random.Next(1000, 9999),
             PassportNumber = _random.Next(100000, 999999),
@@ -198,7 +198,7 @@ public class DataGenerator
             {
                 StreetId = _entityIdCounter--,
                 Name = name,
-                StreeTypetId = streetTypes[_random.Next(streetTypes.Count)].StreetTypeId
+                StreetTypeId = streetTypes[_random.Next(streetTypes.Count)].StreetTypeId
             });
         }
         return streets;

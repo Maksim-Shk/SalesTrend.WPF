@@ -9,7 +9,7 @@
         public int StreetId { get; set; }
         public string Name { get; set; } = null!;
         public string? ShortName { get; set; }
-        public int StreeTypetId { get; set; }
+        public int StreetTypeId { get; set; }
 
         public StreetType StreetType { get; set; } = null!;
         public ICollection<Address>? Addresses { get; set; } // Добавлено свойство Addresses

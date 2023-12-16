@@ -10,7 +10,7 @@ public class Individual
     public string Name { get; set; } = null!;
     public string Surname { get; set; } = null!;
     public string? Patronymic { get; set; }
-    public int AddressId { get; set; }
+    //public int AddressId { get; set; }
     public int TaxNumber { get; set; }
 
     public int PassportSerial { get; set; }

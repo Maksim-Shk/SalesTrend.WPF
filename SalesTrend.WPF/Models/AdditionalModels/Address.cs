@@ -29,7 +29,10 @@ namespace SalesTrend.WPF.Models
         ///// <summary>
         ///// Ид организации / компании
         ///// </summary>
-        public Guid CompanyId { get; set; }
+        public Guid? CompanyId { get; set; }
+        public Guid? IndividualId { get; set; }
+        public Guid? LegalEntityId { get; set; }
+
         public Locality Locality { get; set; } = null!;
         public Street Street { get; set; } = null!;
 
