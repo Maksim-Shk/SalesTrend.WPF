@@ -19,4 +19,9 @@ public class Individual
     public string IssuedBy { get; set; } = null!;
 
     public Address Address { get; set; } = null!;
+
+    public string GetFullName()
+    {
+        return Surname + " " + Name + " " + Patronymic;
+    }
 }

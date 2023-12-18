@@ -1,0 +1,190 @@
+﻿<Window x:Class="SalesTrend.WPF.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SalesTrend.WPF"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:viewModels="clr-namespace:SalesTrend.WPF.ViewModels"
+        mc:Ignorable="d"
+        Title="Заказы клиентов" Height="900" Width="1600">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}" x:Key="WrapText">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="DataGridColumnHeader" x:Key="WrapTextHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding MainMenuViewModel.LoadMainWindowCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" MaxHeight="500"/>
+            <RowDefinition Height="15*" MaxHeight="500"/>
+            <RowDefinition Height="100*" MaxHeight="5000"/>
+            <RowDefinition Height="100*" MaxHeight="5000"/>
+            <RowDefinition Height="100*" MaxHeight="500"/>
+            <RowDefinition Height="10*" MaxHeight="500"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" MaxWidth="4000"/>
+            <ColumnDefinition Width="150*" MaxWidth="4000"/>
+            <ColumnDefinition Width="150*" MaxWidth="4000"/>
+            <ColumnDefinition Width="150*" MaxWidth="4000"/>
+            <ColumnDefinition Width="10*" MaxWidth="4000"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Height="25" VerticalAlignment="Top" Grid.ColumnSpan="5">
+            <MenuItem Header="Сервис" >
+                <MenuItem Header="Работа с заказами">
+                    <MenuItem Header="Добавить новый" Command="{Binding OrderViewModel.AddClientOrderCommand}">
+                    </MenuItem>
+                    <MenuItem Header="Редактировать выбранный" Command="{Binding OrderViewModel.UpdateClientOrderCommand}">
+                    </MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="Удалить выбранный" Command="{Binding OrderViewModel.RemoveClientOrderCommand}">
+                    </MenuItem>
+                </MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Отчеты">
+                    <MenuItem Header="Список клиентов с заказанным товаром" Click="MenuItem_Click_2">
+                    </MenuItem> 
+                    <MenuItem Header="Список товаров по категории с указанием цены" Click="MenuItem_Click_3">
+                    </MenuItem>
+                    <MenuItem Header="Динамика изменения стоимости товара за период" Click="MenuItem_Click_CompaniesWithNoEducationRequirementView">
+                    </MenuItem>
+                </MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Провести кластерный анализ">
+                    <MenuItem Header="Графическое представление" Click="MenuItem_Click_ShowKmeansClick">
+                    </MenuItem>
+                    <MenuItem Header="Табличное представление" Click="MenuItem_Click_ShowKmeansTableClick">
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Справка" Click="MenuItem_Click" >
+            </MenuItem>
+            <MenuItem Header="Выход" Click="MenuItem_Click_1" >
+            </MenuItem>
+        </Menu>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="3">
+            <Button Command="{Binding OrderViewModel.AddClientOrderCommand}"
+                    Content="Добавить"
+                    Margin="5 5 5 5" 
+                    HorizontalAlignment="Left" Width="136">
+            </Button>
+            <Button Command="{Binding OrderViewModel.UpdateClientOrderCommand}"
+                Content="Удалить" Margin="5 5 5 5" HorizontalAlignment="Left" Width="136">
+            </Button>
+            <Button Command="{Binding OrderViewModel.RemoveClientOrderCommand}"
+                    Content="Редактировать" Margin="5 5 5 5" HorizontalAlignment="Left" Width="136">
+            </Button>
+        </StackPanel>
+
+        <DataGrid x:Name="vacancyGrid" 
+          AutoGenerateColumns="False"
+          FontSize="20" 
+          IsReadOnly="True"
+          Margin="10"
+          Grid.Row="2"
+          Grid.RowSpan="4"
+          Grid.Column="1"
+          Grid.ColumnSpan="3"
+          VirtualizingPanel.ScrollUnit="Item" 
+          VirtualizingPanel.IsVirtualizing="True"
+          SelectedItem="{Binding OrderViewModel.SelectedProduct, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+          ItemsSource="{Binding OrderViewModel.ClientOrders, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Height" Value="80"/>
+                    <Setter Property="Height" Value="Auto"/>
+                    <Setter Property="ToolTip">
+                        <Setter.Value>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding OpenDate, StringFormat='Дата открытия: {0:dd.MM.yyyy}'}"/>
+                                    <TextBlock Text="{Binding CloseDate, StringFormat='Дата закрытия: {0:dd.MM.yyyy}'}"/>
+                                </StackPanel>
+                            </ToolTip>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Клиент"
+                    Binding="{Binding ClientFullName}"
+                    Width="30*"
+                    MinWidth="40"
+                    ElementStyle="{StaticResource WrapText}" 
+                    HeaderStyle="{StaticResource WrapTextHeader}"/>
+
+                <DataGridTextColumn Header="Тип клиента"
+                    Binding="{Binding ClientType}"
+                    Width="30*"
+                    MinWidth="40"
+                    ElementStyle="{StaticResource WrapText}" 
+                    HeaderStyle="{StaticResource WrapTextHeader}"/>
+
+                <DataGridTextColumn Header="Общая стоимость заказа"
+                    Binding="{Binding TotalPrice}"
+                    Width="30*"
+                    MinWidth="40"
+                    ElementStyle="{StaticResource WrapText}" 
+                    HeaderStyle="{StaticResource WrapTextHeader}"/>
+
+                <DataGridTemplateColumn Header="Позиции в заказе" HeaderStyle="{StaticResource WrapTextHeader}" MinWidth="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListBox ItemsSource="{Binding Products, UpdateSourceTrigger=PropertyChanged, TargetNullValue='отсутсвует'}"
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                                <ListBox.ItemContainerStyle>
+                                    <Style>
+                                        <Setter Property="ListBoxItem.Background" Value="AliceBlue"/>
+                                        <Setter Property="ListBoxItem.Margin" Value="2"/>
+                                        <Setter Property="ListBoxItem.Padding" Value="1"/>
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock>
+                            <Run Text="{Binding ProductName, TargetNullValue='отсутствует'}"/>
+                            <Run Text=" | Количество: " FontWeight="Bold" Foreground="DarkGray"/>
+                            <Run Text="{Binding Quantity, TargetNullValue='отсутствует'}"/>
+                            <Run Text=" | Цена: " FontWeight="Bold" Foreground="DarkGray"/>
+                            <Run Text="{Binding Price, TargetNullValue='отсутствует'}"/>
+                            <Run Text=" | Артикль: " FontWeight="Bold" Foreground="DarkGray"/>
+                            <Run Text="{Binding Article, TargetNullValue='отсутствует'}"/>
+                                            
+                            <Run Text=" | Категория: " FontWeight="Bold" Foreground="DarkGray"/>
+                            <Run Text="{Binding ProductType, TargetNullValue='отсутствует'}"/>
+                            <!-- Добавьте другие Run элементы для остальных свойств ProductDto -->
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+    </Grid>
+
+</Window>

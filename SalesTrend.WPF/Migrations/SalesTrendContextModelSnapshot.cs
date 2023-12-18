@@ -231,31 +231,31 @@ namespace SalesTrend.WPF.Migrations
                         {
                             ClientOrderId = 1,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            OrderDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7878)
+                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4749)
                         },
                         new
                         {
                             ClientOrderId = 2,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            OrderDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7880)
+                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4751)
                         },
                         new
                         {
                             ClientOrderId = 3,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            OrderDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7881)
+                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4753)
                         },
                         new
                         {
                             ClientOrderId = 4,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            OrderDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7882)
+                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4754)
                         },
                         new
                         {
                             ClientOrderId = 5,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            OrderDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7884)
+                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4755)
                         });
                 });
 
@@ -541,7 +541,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            IssueDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7702),
+                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4582),
                             IssuedBy = "УФМС",
                             Name = "Иван",
                             PassportNumber = 567890,
@@ -553,7 +553,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            IssueDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7705),
+                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4584),
                             IssuedBy = "УФМС",
                             Name = "Петр",
                             PassportNumber = 123456,
@@ -565,7 +565,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            IssueDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7707),
+                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4586),
                             IssuedBy = "УФМС",
                             Name = "Сидор",
                             PassportNumber = 112233,
@@ -577,7 +577,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            IssueDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7708),
+                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4588),
                             IssuedBy = "УФМС",
                             Name = "Александр",
                             PassportNumber = 161718,
@@ -589,7 +589,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            IssueDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7710),
+                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4589),
                             IssuedBy = "УФМС",
                             Name = "Дмитрий",
                             PassportNumber = 212223,
@@ -930,91 +930,91 @@ namespace SalesTrend.WPF.Migrations
                         {
                             PriceListId = 1,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7493)
+                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4369)
                         },
                         new
                         {
                             PriceListId = 2,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7497)
+                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4373)
                         },
                         new
                         {
                             PriceListId = 3,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7508)
+                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4386)
                         },
                         new
                         {
                             PriceListId = 4,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7510)
+                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4388)
                         },
                         new
                         {
                             PriceListId = 5,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7532)
+                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4389)
                         },
                         new
                         {
                             PriceListId = 6,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7533)
+                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4390)
                         },
                         new
                         {
                             PriceListId = 7,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7535)
+                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4392)
                         },
                         new
                         {
                             PriceListId = 8,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7536)
+                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4393)
                         },
                         new
                         {
                             PriceListId = 9,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7537)
+                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4394)
                         },
                         new
                         {
                             PriceListId = 10,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7538)
+                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4395)
                         },
                         new
                         {
                             PriceListId = 11,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7540)
+                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4397)
                         },
                         new
                         {
                             PriceListId = 12,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7541)
+                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4398)
                         },
                         new
                         {
                             PriceListId = 13,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7542)
+                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4399)
                         },
                         new
                         {
                             PriceListId = 14,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7543)
+                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4400)
                         },
                         new
                         {
                             PriceListId = 15,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7545)
+                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4436)
                         });
                 });
 

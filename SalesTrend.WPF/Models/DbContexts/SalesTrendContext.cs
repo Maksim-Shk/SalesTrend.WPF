@@ -1,11 +1,4 @@
-﻿using SalesTrend.WPF.Models.Helpers;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using Accord;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SalesTrend.WPF.Models;
 
@@ -30,6 +23,7 @@ public class SalesTrendContext : DbContext
     public virtual DbSet<PriceList> PriceLists { get; set; }
     public virtual DbSet<PriceListProduct> PriceListProducts { get; set; }
     public virtual DbSet<Product> Products { get; set; }
+    public virtual DbSet<ProductType> ProductTypes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -556,13 +550,13 @@ public class SalesTrendContext : DbContext
             new Address { AddressId = 4, House = "1424", Apartment = "134", LocalityId = 2, StreetId = 2, CompanyId = Guid.Parse("00000000-0000-0000-0000-000000000004") },
             new Address { AddressId = 5, House = "1524", Apartment = "141", LocalityId = 2, StreetId = 2, CompanyId = Guid.Parse("00000000-0000-0000-0000-000000000005") },
             new Address { AddressId = 6, House = "1624", Apartment = "144", LocalityId = 2, StreetId = 2, LegalEntityId = Guid.Parse("00000000-0000-0000-0000-000000000001") },
-            new Address { AddressId = 7, House = "1274", Apartment = "14", LocalityId = 3, StreetId = 3, LegalEntityId = Guid.Parse("00000000-0000-0000-0000-000000000002") },
+            new Address { AddressId = 7, House = "1274", Apartment = "14", LocalityId = 3, StreetId = 3, LegalEntityId =  Guid.Parse("00000000-0000-0000-0000-000000000002") },
             new Address { AddressId = 8, House = "1124", Apartment = "514", LocalityId = 3, StreetId = 3, LegalEntityId = Guid.Parse("00000000-0000-0000-0000-000000000003") },
             new Address { AddressId = 9, House = "1242", Apartment = "124", LocalityId = 3, StreetId = 3, LegalEntityId = Guid.Parse("00000000-0000-0000-0000-000000000004") },
             new Address { AddressId = 10, House = "124", Apartment = "214", LocalityId = 4, StreetId = 4, LegalEntityId = Guid.Parse("00000000-0000-0000-0000-000000000005") },
             new Address { AddressId = 11, House = "124", Apartment = "714", LocalityId = 4, StreetId = 4, IndividualId = Guid.Parse("00000000-0000-0000-0000-000000000001") },
             new Address { AddressId = 12, House = "124", Apartment = "814", LocalityId = 4, StreetId = 4, IndividualId = Guid.Parse("00000000-0000-0000-0000-000000000002") },
-            new Address { AddressId = 13, House = "444", Apartment = "14", LocalityId = 5, StreetId = 5, IndividualId = Guid.Parse("00000000-0000-0000-0000-000000000003") },
+            new Address { AddressId = 13, House = "444", Apartment = "14", LocalityId = 5, StreetId = 5, IndividualId =  Guid.Parse("00000000-0000-0000-0000-000000000003") },
             new Address { AddressId = 14, House = "111", Apartment = "194", LocalityId = 5, StreetId = 5, IndividualId = Guid.Parse("00000000-0000-0000-0000-000000000004") },
             new Address { AddressId = 15, House = "222", Apartment = "149", LocalityId = 5, StreetId = 5, IndividualId = Guid.Parse("00000000-0000-0000-0000-000000000005") }
             );
@@ -619,10 +613,5 @@ public class SalesTrendContext : DbContext
             new Phone { PhoneId = 14, PhoneNumber = "+78005553535", EntityId = Guid.Parse("00000000-0000-0000-0000-000000000004") },
             new Phone { PhoneId = 15, PhoneNumber = "+78005553535", EntityId = Guid.Parse("00000000-0000-0000-0000-000000000005") }
             );
-
-
-
-
-
     }
 }

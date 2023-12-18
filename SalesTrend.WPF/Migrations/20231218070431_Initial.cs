@@ -357,11 +357,11 @@ namespace SalesTrend.WPF.Migrations
                 columns: new[] { "IndividualId", "IssueDate", "IssuedBy", "Name", "PassportNumber", "PassportSerial", "Patronymic", "Surname", "TaxNumber" },
                 values: new object[,]
                 {
-                    { new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7702), "УФМС", "Иван", 567890, 1234, "Иванович", "Иванов", 123456789 },
-                    { new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7705), "УФМС", "Петр", 123456, 5678, "Петрович", "Петров", 987654321 },
-                    { new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7707), "УФМС", "Сидор", 112233, 9101, "Сидорович", "Сидоров", 567890123 },
-                    { new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7708), "УФМС", "Александр", 161718, 1415, "Александрович", "Александров", 234567890 },
-                    { new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7710), "УФМС", "Дмитрий", 212223, 1920, "Дмитриевич", "Дмитриев", 678901234 }
+                    { new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4582), "УФМС", "Иван", 567890, 1234, "Иванович", "Иванов", 123456789 },
+                    { new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4584), "УФМС", "Петр", 123456, 5678, "Петрович", "Петров", 987654321 },
+                    { new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4586), "УФМС", "Сидор", 112233, 9101, "Сидорович", "Сидоров", 567890123 },
+                    { new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4588), "УФМС", "Александр", 161718, 1415, "Александрович", "Александров", 234567890 },
+                    { new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4589), "УФМС", "Дмитрий", 212223, 1920, "Дмитриевич", "Дмитриев", 678901234 }
                 });
 
             migrationBuilder.InsertData(
@@ -417,11 +417,11 @@ namespace SalesTrend.WPF.Migrations
                 columns: new[] { "ClientOrderId", "ClientId", "OrderDate" },
                 values: new object[,]
                 {
-                    { 1, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7878) },
-                    { 2, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7880) },
-                    { 3, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7881) },
-                    { 4, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7882) },
-                    { 5, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7884) }
+                    { 1, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4749) },
+                    { 2, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4751) },
+                    { 3, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4753) },
+                    { 4, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4754) },
+                    { 5, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4755) }
                 });
 
             migrationBuilder.InsertData(
@@ -463,21 +463,21 @@ namespace SalesTrend.WPF.Migrations
                 columns: new[] { "PriceListId", "CompanyId", "ReleaseDate" },
                 values: new object[,]
                 {
-                    { 1, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7493) },
-                    { 2, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7497) },
-                    { 3, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7508) },
-                    { 4, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7510) },
-                    { 5, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7532) },
-                    { 6, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7533) },
-                    { 7, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7535) },
-                    { 8, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7536) },
-                    { 9, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7537) },
-                    { 10, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7538) },
-                    { 11, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7540) },
-                    { 12, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7541) },
-                    { 13, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7542) },
-                    { 14, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 11, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7543) },
-                    { 15, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 10, 16, 22, 16, 44, 645, DateTimeKind.Utc).AddTicks(7545) }
+                    { 1, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4369) },
+                    { 2, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4373) },
+                    { 3, new Guid("00000000-0000-0000-0000-000000000001"), new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4386) },
+                    { 4, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4388) },
+                    { 5, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4389) },
+                    { 6, new Guid("00000000-0000-0000-0000-000000000002"), new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4390) },
+                    { 7, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4392) },
+                    { 8, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4393) },
+                    { 9, new Guid("00000000-0000-0000-0000-000000000003"), new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4394) },
+                    { 10, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4395) },
+                    { 11, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4397) },
+                    { 12, new Guid("00000000-0000-0000-0000-000000000004"), new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4398) },
+                    { 13, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4399) },
+                    { 14, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4400) },
+                    { 15, new Guid("00000000-0000-0000-0000-000000000005"), new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4436) }
                 });
 
             migrationBuilder.InsertData(
