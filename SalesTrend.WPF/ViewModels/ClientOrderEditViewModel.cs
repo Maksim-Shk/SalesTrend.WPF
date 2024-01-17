@@ -215,8 +215,8 @@ public class ClientOrderEditViewModel
                           var clientOrder = new ClientOrder
                           {
                               OrderDate = DateTime.UtcNow,
-                               ClientId = SelectedClient.ClientId
-                                
+                              ClientId = SelectedClient.ClientId
+
                           };
                           db.ClientOrders.Add(clientOrder);
                           db.SaveChanges();
@@ -231,6 +231,40 @@ public class ClientOrderEditViewModel
                               db.ClientOrderProducts.Add(clientOrderProduct);
                           }
                           db.SaveChanges();
+                      }
+                  }
+              }));
+        }
+    }
+
+    private RelayCommand _RemoveCommand;
+    public RelayCommand RemoveCommand
+    {
+        get
+        {
+            return _RemoveCommand ??
+              (_RemoveCommand = new RelayCommand(obj =>
+              {
+                  using (var db = new SalesTrendContext())
+                  {
+                      using (var transaction = db.Database.BeginTransaction())
+                      {
+                          try
+                          {
+                              var product = db.Products
+                                .FirstOrDefault(x => x.ProductId == SelectedProduct.ProductId);
+
+                              if (product != null)
+                                  db.Products.Remove(product);
+                              else transaction.Rollback();
+
+                              db.SaveChanges();
+                              transaction.Commit();
+                          }
+                          catch
+                          {
+                              transaction.Rollback();
+                          }
                       }
                   }
               }));

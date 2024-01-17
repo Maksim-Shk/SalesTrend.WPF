@@ -12,7 +12,7 @@ using SalesTrend.WPF.Models;
 namespace SalesTrend.WPF.Migrations
 {
     [DbContext(typeof(SalesTrendContext))]
-    [Migration("20231218070431_Initial")]
+    [Migration("20240114213016_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -234,31 +234,31 @@ namespace SalesTrend.WPF.Migrations
                         {
                             ClientOrderId = 1,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4749)
+                            OrderDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(663)
                         },
                         new
                         {
                             ClientOrderId = 2,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4751)
+                            OrderDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(665)
                         },
                         new
                         {
                             ClientOrderId = 3,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4753)
+                            OrderDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(666)
                         },
                         new
                         {
                             ClientOrderId = 4,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4754)
+                            OrderDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(667)
                         },
                         new
                         {
                             ClientOrderId = 5,
                             ClientId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            OrderDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4755)
+                            OrderDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(668)
                         });
                 });
 
@@ -293,140 +293,735 @@ namespace SalesTrend.WPF.Migrations
                             ClientOrderProductId = 1,
                             ClientOrderId = 1,
                             ProductId = 1,
-                            Quantity = 5
+                            Quantity = 16
                         },
                         new
                         {
                             ClientOrderProductId = 2,
                             ClientOrderId = 1,
                             ProductId = 2,
-                            Quantity = 2
+                            Quantity = 21
                         },
                         new
                         {
                             ClientOrderProductId = 3,
                             ClientOrderId = 1,
                             ProductId = 3,
-                            Quantity = 6
+                            Quantity = 38
                         },
                         new
                         {
                             ClientOrderProductId = 4,
                             ClientOrderId = 1,
                             ProductId = 4,
-                            Quantity = 1
+                            Quantity = 20
                         },
                         new
                         {
                             ClientOrderProductId = 5,
                             ClientOrderId = 2,
                             ProductId = 5,
-                            Quantity = 2
+                            Quantity = 46
                         },
                         new
                         {
                             ClientOrderProductId = 6,
                             ClientOrderId = 2,
                             ProductId = 6,
-                            Quantity = 5
+                            Quantity = 35
                         },
                         new
                         {
                             ClientOrderProductId = 7,
                             ClientOrderId = 2,
                             ProductId = 7,
-                            Quantity = 8
+                            Quantity = 33
                         },
                         new
                         {
                             ClientOrderProductId = 8,
                             ClientOrderId = 2,
                             ProductId = 8,
-                            Quantity = 1
+                            Quantity = 3
                         },
                         new
                         {
                             ClientOrderProductId = 9,
                             ClientOrderId = 3,
                             ProductId = 1,
-                            Quantity = 2
+                            Quantity = 27
                         },
                         new
                         {
                             ClientOrderProductId = 10,
                             ClientOrderId = 3,
                             ProductId = 15,
-                            Quantity = 5
+                            Quantity = 47
                         },
                         new
                         {
                             ClientOrderProductId = 11,
                             ClientOrderId = 3,
                             ProductId = 14,
-                            Quantity = 8
+                            Quantity = 20
                         },
                         new
                         {
                             ClientOrderProductId = 12,
                             ClientOrderId = 3,
                             ProductId = 13,
-                            Quantity = 1
+                            Quantity = 45
                         },
                         new
                         {
                             ClientOrderProductId = 13,
                             ClientOrderId = 4,
-                            ProductId = 12,
-                            Quantity = 2
+                            ProductId = 4,
+                            Quantity = 10
                         },
                         new
                         {
                             ClientOrderProductId = 14,
                             ClientOrderId = 4,
-                            ProductId = 11,
-                            Quantity = 5
+                            ProductId = 12,
+                            Quantity = 22
                         },
                         new
                         {
                             ClientOrderProductId = 15,
                             ClientOrderId = 4,
-                            ProductId = 10,
-                            Quantity = 8
+                            ProductId = 11,
+                            Quantity = 25
                         },
                         new
                         {
                             ClientOrderProductId = 16,
                             ClientOrderId = 4,
-                            ProductId = 8,
-                            Quantity = 1
+                            ProductId = 10,
+                            Quantity = 32
                         },
                         new
                         {
                             ClientOrderProductId = 17,
-                            ClientOrderId = 5,
-                            ProductId = 9,
-                            Quantity = 2
+                            ClientOrderId = 4,
+                            ProductId = 8,
+                            Quantity = 18
                         },
                         new
                         {
                             ClientOrderProductId = 18,
                             ClientOrderId = 5,
-                            ProductId = 1,
-                            Quantity = 5
+                            ProductId = 9,
+                            Quantity = 15
                         },
                         new
                         {
                             ClientOrderProductId = 19,
                             ClientOrderId = 5,
-                            ProductId = 2,
-                            Quantity = 8
+                            ProductId = 1,
+                            Quantity = 18
                         },
                         new
                         {
                             ClientOrderProductId = 20,
                             ClientOrderId = 5,
+                            ProductId = 2,
+                            Quantity = 26
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 21,
+                            ClientOrderId = 5,
                             ProductId = 5,
+                            Quantity = 59
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 22,
+                            ClientOrderId = 5,
+                            ProductId = 4,
+                            Quantity = 34
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 23,
+                            ClientOrderId = 5,
+                            ProductId = 21,
+                            Quantity = 14
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 24,
+                            ClientOrderId = 5,
+                            ProductId = 21,
+                            Quantity = 47
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 25,
+                            ClientOrderId = 5,
+                            ProductId = 22,
+                            Quantity = 23
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 26,
+                            ClientOrderId = 5,
+                            ProductId = 22,
+                            Quantity = 15
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 27,
+                            ClientOrderId = 5,
+                            ProductId = 23,
+                            Quantity = 5
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 28,
+                            ClientOrderId = 5,
+                            ProductId = 23,
+                            Quantity = 8
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 29,
+                            ClientOrderId = 5,
+                            ProductId = 24,
+                            Quantity = 19
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 30,
+                            ClientOrderId = 5,
+                            ProductId = 24,
+                            Quantity = 16
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 31,
+                            ClientOrderId = 5,
+                            ProductId = 25,
+                            Quantity = 13
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 32,
+                            ClientOrderId = 5,
+                            ProductId = 25,
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 33,
+                            ClientOrderId = 5,
+                            ProductId = 26,
+                            Quantity = 35
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 34,
+                            ClientOrderId = 5,
+                            ProductId = 26,
                             Quantity = 1
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 35,
+                            ClientOrderId = 5,
+                            ProductId = 27,
+                            Quantity = 47
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 36,
+                            ClientOrderId = 5,
+                            ProductId = 27,
+                            Quantity = 29
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 37,
+                            ClientOrderId = 5,
+                            ProductId = 28,
+                            Quantity = 45
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 38,
+                            ClientOrderId = 5,
+                            ProductId = 28,
+                            Quantity = 15
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 39,
+                            ClientOrderId = 5,
+                            ProductId = 29,
+                            Quantity = 10
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 40,
+                            ClientOrderId = 5,
+                            ProductId = 29,
+                            Quantity = 22
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 41,
+                            ClientOrderId = 5,
+                            ProductId = 210,
+                            Quantity = 6
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 42,
+                            ClientOrderId = 5,
+                            ProductId = 210,
+                            Quantity = 29
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 43,
+                            ClientOrderId = 5,
+                            ProductId = 211,
+                            Quantity = 45
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 44,
+                            ClientOrderId = 5,
+                            ProductId = 211,
+                            Quantity = 15
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 45,
+                            ClientOrderId = 5,
+                            ProductId = 212,
+                            Quantity = 10
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 46,
+                            ClientOrderId = 5,
+                            ProductId = 212,
+                            Quantity = 22
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 47,
+                            ClientOrderId = 5,
+                            ProductId = 213,
+                            Quantity = 6
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 48,
+                            ClientOrderId = 5,
+                            ProductId = 213,
+                            Quantity = 29
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 49,
+                            ClientOrderId = 5,
+                            ProductId = 214,
+                            Quantity = 21
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 50,
+                            ClientOrderId = 5,
+                            ProductId = 214,
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 51,
+                            ClientOrderId = 5,
+                            ProductId = 215,
+                            Quantity = 10
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 52,
+                            ClientOrderId = 5,
+                            ProductId = 215,
+                            Quantity = 44
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 53,
+                            ClientOrderId = 5,
+                            ProductId = 216,
+                            Quantity = 26
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 54,
+                            ClientOrderId = 5,
+                            ProductId = 216,
+                            Quantity = 49
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 55,
+                            ClientOrderId = 5,
+                            ProductId = 217,
+                            Quantity = 31
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 56,
+                            ClientOrderId = 5,
+                            ProductId = 217,
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 57,
+                            ClientOrderId = 5,
+                            ProductId = 218,
+                            Quantity = 7
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 58,
+                            ClientOrderId = 5,
+                            ProductId = 218,
+                            Quantity = 5
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 59,
+                            ClientOrderId = 5,
+                            ProductId = 219,
+                            Quantity = 21
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 60,
+                            ClientOrderId = 5,
+                            ProductId = 219,
+                            Quantity = 29
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 61,
+                            ClientOrderId = 5,
+                            ProductId = 220,
+                            Quantity = 2
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 62,
+                            ClientOrderId = 5,
+                            ProductId = 220,
+                            Quantity = 39
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 63,
+                            ClientOrderId = 5,
+                            ProductId = 221,
+                            Quantity = 48
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 64,
+                            ClientOrderId = 5,
+                            ProductId = 221,
+                            Quantity = 28
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 65,
+                            ClientOrderId = 5,
+                            ProductId = 222,
+                            Quantity = 16
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 66,
+                            ClientOrderId = 5,
+                            ProductId = 222,
+                            Quantity = 43
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 67,
+                            ClientOrderId = 5,
+                            ProductId = 223,
+                            Quantity = 31
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 68,
+                            ClientOrderId = 5,
+                            ProductId = 223,
+                            Quantity = 32
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 69,
+                            ClientOrderId = 5,
+                            ProductId = 224,
+                            Quantity = 21
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 70,
+                            ClientOrderId = 5,
+                            ProductId = 224,
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 71,
+                            ClientOrderId = 5,
+                            ProductId = 225,
+                            Quantity = 27
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 72,
+                            ClientOrderId = 5,
+                            ProductId = 225,
+                            Quantity = 31
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 73,
+                            ClientOrderId = 5,
+                            ProductId = 226,
+                            Quantity = 49
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 74,
+                            ClientOrderId = 5,
+                            ProductId = 226,
+                            Quantity = 5
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 75,
+                            ClientOrderId = 5,
+                            ProductId = 227,
+                            Quantity = 40
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 76,
+                            ClientOrderId = 5,
+                            ProductId = 227,
+                            Quantity = 52
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 77,
+                            ClientOrderId = 5,
+                            ProductId = 228,
+                            Quantity = 24
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 78,
+                            ClientOrderId = 5,
+                            ProductId = 228,
+                            Quantity = 27
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 79,
+                            ClientOrderId = 5,
+                            ProductId = 229,
+                            Quantity = 17
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 80,
+                            ClientOrderId = 5,
+                            ProductId = 229,
+                            Quantity = 23
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 81,
+                            ClientOrderId = 5,
+                            ProductId = 230,
+                            Quantity = 38
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 82,
+                            ClientOrderId = 5,
+                            ProductId = 230,
+                            Quantity = 1
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 83,
+                            ClientOrderId = 5,
+                            ProductId = 231,
+                            Quantity = 52
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 84,
+                            ClientOrderId = 5,
+                            ProductId = 231,
+                            Quantity = 9
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 85,
+                            ClientOrderId = 5,
+                            ProductId = 232,
+                            Quantity = 2
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 86,
+                            ClientOrderId = 5,
+                            ProductId = 232,
+                            Quantity = 7
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 87,
+                            ClientOrderId = 5,
+                            ProductId = 233,
+                            Quantity = 29
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 88,
+                            ClientOrderId = 5,
+                            ProductId = 233,
+                            Quantity = 10
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 89,
+                            ClientOrderId = 5,
+                            ProductId = 234,
+                            Quantity = 49
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 90,
+                            ClientOrderId = 5,
+                            ProductId = 234,
+                            Quantity = 37
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 91,
+                            ClientOrderId = 5,
+                            ProductId = 235,
+                            Quantity = 1
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 92,
+                            ClientOrderId = 5,
+                            ProductId = 235,
+                            Quantity = 12
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 93,
+                            ClientOrderId = 5,
+                            ProductId = 236,
+                            Quantity = 28
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 94,
+                            ClientOrderId = 5,
+                            ProductId = 236,
+                            Quantity = 18
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 95,
+                            ClientOrderId = 5,
+                            ProductId = 237,
+                            Quantity = 58
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 96,
+                            ClientOrderId = 5,
+                            ProductId = 237,
+                            Quantity = 31
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 97,
+                            ClientOrderId = 5,
+                            ProductId = 238,
+                            Quantity = 22
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 98,
+                            ClientOrderId = 5,
+                            ProductId = 238,
+                            Quantity = 13
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 99,
+                            ClientOrderId = 5,
+                            ProductId = 239,
+                            Quantity = 48
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 100,
+                            ClientOrderId = 5,
+                            ProductId = 239,
+                            Quantity = 1
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 101,
+                            ClientOrderId = 5,
+                            ProductId = 240,
+                            Quantity = 13
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 102,
+                            ClientOrderId = 5,
+                            ProductId = 240,
+                            Quantity = 18
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 103,
+                            ClientOrderId = 5,
+                            ProductId = 241,
+                            Quantity = 19
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 104,
+                            ClientOrderId = 5,
+                            ProductId = 241,
+                            Quantity = 33
+                        },
+                        new
+                        {
+                            ClientOrderProductId = 105,
+                            ClientOrderId = 5,
+                            ProductId = 242,
+                            Quantity = 22
                         });
                 });
 
@@ -544,7 +1139,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4582),
+                            IssueDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(532),
                             IssuedBy = "УФМС",
                             Name = "Иван",
                             PassportNumber = 567890,
@@ -556,7 +1151,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4584),
+                            IssueDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(535),
                             IssuedBy = "УФМС",
                             Name = "Петр",
                             PassportNumber = 123456,
@@ -568,7 +1163,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4586),
+                            IssueDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(537),
                             IssuedBy = "УФМС",
                             Name = "Сидор",
                             PassportNumber = 112233,
@@ -580,7 +1175,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4588),
+                            IssueDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(538),
                             IssuedBy = "УФМС",
                             Name = "Александр",
                             PassportNumber = 161718,
@@ -592,7 +1187,7 @@ namespace SalesTrend.WPF.Migrations
                         new
                         {
                             IndividualId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            IssueDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4589),
+                            IssueDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(540),
                             IssuedBy = "УФМС",
                             Name = "Дмитрий",
                             PassportNumber = 212223,
@@ -933,91 +1528,91 @@ namespace SalesTrend.WPF.Migrations
                         {
                             PriceListId = 1,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4369)
+                            ReleaseDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(353)
                         },
                         new
                         {
                             PriceListId = 2,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4373)
+                            ReleaseDate = new DateTime(2023, 12, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(357)
                         },
                         new
                         {
                             PriceListId = 3,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4386)
+                            ReleaseDate = new DateTime(2023, 11, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(363)
                         },
                         new
                         {
                             PriceListId = 4,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4388)
+                            ReleaseDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(365)
                         },
                         new
                         {
                             PriceListId = 5,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4389)
+                            ReleaseDate = new DateTime(2023, 12, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(366)
                         },
                         new
                         {
                             PriceListId = 6,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4390)
+                            ReleaseDate = new DateTime(2023, 11, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(368)
                         },
                         new
                         {
                             PriceListId = 7,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4392)
+                            ReleaseDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(369)
                         },
                         new
                         {
                             PriceListId = 8,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4393)
+                            ReleaseDate = new DateTime(2023, 12, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(370)
                         },
                         new
                         {
                             PriceListId = 9,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4394)
+                            ReleaseDate = new DateTime(2023, 11, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(372)
                         },
                         new
                         {
                             PriceListId = 10,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4395)
+                            ReleaseDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(373)
                         },
                         new
                         {
                             PriceListId = 11,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4397)
+                            ReleaseDate = new DateTime(2023, 12, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(374)
                         },
                         new
                         {
                             PriceListId = 12,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4398)
+                            ReleaseDate = new DateTime(2023, 11, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(376)
                         },
                         new
                         {
                             PriceListId = 13,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 12, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4399)
+                            ReleaseDate = new DateTime(2024, 1, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(377)
                         },
                         new
                         {
                             PriceListId = 14,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 11, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4400)
+                            ReleaseDate = new DateTime(2023, 12, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(378)
                         },
                         new
                         {
                             PriceListId = 15,
                             CompanyId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            ReleaseDate = new DateTime(2023, 10, 18, 7, 4, 31, 143, DateTimeKind.Utc).AddTicks(4436)
+                            ReleaseDate = new DateTime(2023, 11, 14, 21, 30, 16, 416, DateTimeKind.Utc).AddTicks(379)
                         });
                 });
 
@@ -1046,526 +1641,834 @@ namespace SalesTrend.WPF.Migrations
                         {
                             ProductId = 1,
                             PriceListId = 1,
-                            Price = 100m,
+                            Price = 10000m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 1,
-                            Price = 150m,
+                            Price = 15000m,
                             Quantity = 8
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 1,
-                            Price = 200m,
+                            Price = 20000m,
                             Quantity = 10
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 1,
-                            Price = 120m,
+                            Price = 12000m,
                             Quantity = 3
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 1,
-                            Price = 80m,
+                            Price = 8000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 2,
-                            Price = 120m,
+                            Price = 12000m,
                             Quantity = 1
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 2,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 18
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 2,
-                            Price = 250m,
+                            Price = 33000m,
                             Quantity = 11
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 2,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 2,
-                            Price = 180m,
+                            Price = 32000m,
                             Quantity = 25
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 3,
-                            Price = 200m,
+                            Price = 20000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 3,
-                            Price = 130m,
+                            Price = 13000m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 3,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 2
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 3,
-                            Price = 150m,
+                            Price = 15000m,
                             Quantity = 31
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 3,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 16
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 4,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 12,
                             PriceListId = 4,
-                            Price = 160m,
+                            Price = 16000m,
                             Quantity = 6
                         },
                         new
                         {
                             ProductId = 13,
                             PriceListId = 4,
-                            Price = 180m,
+                            Price = 32000m,
                             Quantity = 12
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 4,
-                            Price = 130m,
+                            Price = 13000m,
                             Quantity = 4
                         },
                         new
                         {
                             ProductId = 15,
                             PriceListId = 4,
-                            Price = 90m,
+                            Price = 9000m,
                             Quantity = 20
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 5,
-                            Price = 120m,
+                            Price = 12000m,
                             Quantity = 1
                         },
                         new
                         {
                             ProductId = 12,
                             PriceListId = 5,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 18
                         },
                         new
                         {
                             ProductId = 13,
                             PriceListId = 5,
-                            Price = 250m,
+                            Price = 33000m,
                             Quantity = 11
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 5,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 15,
                             PriceListId = 5,
-                            Price = 180m,
+                            Price = 18000m,
                             Quantity = 25
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 6,
-                            Price = 200m,
+                            Price = 20000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 12,
                             PriceListId = 6,
-                            Price = 130m,
+                            Price = 13000m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 13,
                             PriceListId = 6,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 2
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 6,
-                            Price = 150m,
+                            Price = 15000m,
                             Quantity = 31
                         },
                         new
                         {
                             ProductId = 15,
                             PriceListId = 6,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 16
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 7,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 7,
-                            Price = 160m,
+                            Price = 16000m,
                             Quantity = 6
                         },
                         new
                         {
                             ProductId = 7,
                             PriceListId = 7,
-                            Price = 180m,
+                            Price = 18000m,
                             Quantity = 12
                         },
                         new
                         {
                             ProductId = 8,
                             PriceListId = 7,
-                            Price = 130m,
+                            Price = 13000m,
                             Quantity = 4
                         },
                         new
                         {
                             ProductId = 9,
                             PriceListId = 7,
-                            Price = 90m,
+                            Price = 9000m,
                             Quantity = 20
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 8,
-                            Price = 120m,
+                            Price = 12000m,
                             Quantity = 1
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 8,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 18
                         },
                         new
                         {
                             ProductId = 7,
                             PriceListId = 8,
-                            Price = 250m,
+                            Price = 34000m,
                             Quantity = 11
                         },
                         new
                         {
                             ProductId = 8,
                             PriceListId = 8,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 9,
                             PriceListId = 8,
-                            Price = 180m,
+                            Price = 18000m,
                             Quantity = 25
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 9,
-                            Price = 200m,
+                            Price = 20000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 9,
-                            Price = 130m,
+                            Price = 13000m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 7,
                             PriceListId = 9,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 2
                         },
                         new
                         {
                             ProductId = 8,
                             PriceListId = 9,
-                            Price = 150m,
+                            Price = 15000m,
                             Quantity = 31
                         },
                         new
                         {
                             ProductId = 9,
                             PriceListId = 9,
-                            Price = 110m,
+                            Price = 11000m,
                             Quantity = 16
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 10,
-                            Price = 110m,
+                            Price = 23000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 10,
-                            Price = 160m,
+                            Price = 46000m,
                             Quantity = 6
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 10,
-                            Price = 180m,
+                            Price = 60000m,
                             Quantity = 12
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 10,
-                            Price = 130m,
+                            Price = 46000m,
                             Quantity = 4
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 10,
-                            Price = 90m,
+                            Price = 23000m,
                             Quantity = 20
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 11,
-                            Price = 120m,
+                            Price = 46000m,
                             Quantity = 1
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 11,
-                            Price = 110m,
+                            Price = 53000m,
                             Quantity = 18
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 11,
-                            Price = 250m,
+                            Price = 62000m,
                             Quantity = 11
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 11,
-                            Price = 110m,
+                            Price = 55000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 11,
-                            Price = 180m,
+                            Price = 35000m,
                             Quantity = 25
                         },
                         new
                         {
                             ProductId = 3,
                             PriceListId = 12,
-                            Price = 200m,
+                            Price = 15000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 12,
-                            Price = 130m,
+                            Price = 14300m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 11,
                             PriceListId = 12,
-                            Price = 110m,
+                            Price = 420000m,
                             Quantity = 2
                         },
                         new
                         {
                             ProductId = 2,
                             PriceListId = 12,
-                            Price = 150m,
+                            Price = 33000m,
                             Quantity = 31
                         },
                         new
                         {
                             ProductId = 6,
                             PriceListId = 12,
-                            Price = 110m,
+                            Price = 29000m,
                             Quantity = 16
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 13,
-                            Price = 110m,
+                            Price = 17000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 13,
-                            Price = 160m,
+                            Price = 26000m,
                             Quantity = 6
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 13,
-                            Price = 180m,
+                            Price = 31000m,
                             Quantity = 12
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 13,
-                            Price = 130m,
+                            Price = 20000m,
                             Quantity = 4
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 13,
-                            Price = 90m,
+                            Price = 18000m,
                             Quantity = 20
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 14,
-                            Price = 120m,
+                            Price = 55000m,
                             Quantity = 1
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 14,
-                            Price = 110m,
+                            Price = 42000m,
                             Quantity = 18
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 14,
-                            Price = 250m,
+                            Price = 51000m,
                             Quantity = 11
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 14,
-                            Price = 110m,
+                            Price = 33000m,
                             Quantity = 7
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 14,
-                            Price = 180m,
+                            Price = 44000m,
                             Quantity = 25
                         },
                         new
                         {
                             ProductId = 10,
                             PriceListId = 15,
-                            Price = 200m,
+                            Price = 44000m,
                             Quantity = 15
                         },
                         new
                         {
                             ProductId = 1,
                             PriceListId = 15,
-                            Price = 130m,
+                            Price = 42000m,
                             Quantity = 5
                         },
                         new
                         {
                             ProductId = 14,
                             PriceListId = 15,
-                            Price = 110m,
+                            Price = 38000m,
                             Quantity = 2
                         },
                         new
                         {
                             ProductId = 4,
                             PriceListId = 15,
-                            Price = 150m,
+                            Price = 20000m,
                             Quantity = 31
                         },
                         new
                         {
                             ProductId = 5,
                             PriceListId = 15,
-                            Price = 110m,
+                            Price = 49000m,
                             Quantity = 16
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            PriceListId = 15,
+                            Price = 56000m,
+                            Quantity = 20
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            PriceListId = 15,
+                            Price = 37000m,
+                            Quantity = 22
+                        },
+                        new
+                        {
+                            ProductId = 23,
+                            PriceListId = 15,
+                            Price = 22000m,
+                            Quantity = 24
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            PriceListId = 15,
+                            Price = 54000m,
+                            Quantity = 26
+                        },
+                        new
+                        {
+                            ProductId = 25,
+                            PriceListId = 15,
+                            Price = 40000m,
+                            Quantity = 28
+                        },
+                        new
+                        {
+                            ProductId = 26,
+                            PriceListId = 15,
+                            Price = 16000m,
+                            Quantity = 30
+                        },
+                        new
+                        {
+                            ProductId = 27,
+                            PriceListId = 15,
+                            Price = 62000m,
+                            Quantity = 32
+                        },
+                        new
+                        {
+                            ProductId = 28,
+                            PriceListId = 15,
+                            Price = 20000m,
+                            Quantity = 34
+                        },
+                        new
+                        {
+                            ProductId = 29,
+                            PriceListId = 15,
+                            Price = 45000m,
+                            Quantity = 36
+                        },
+                        new
+                        {
+                            ProductId = 210,
+                            PriceListId = 15,
+                            Price = 43000m,
+                            Quantity = 38
+                        },
+                        new
+                        {
+                            ProductId = 211,
+                            PriceListId = 15,
+                            Price = 15000m,
+                            Quantity = 40
+                        },
+                        new
+                        {
+                            ProductId = 212,
+                            PriceListId = 15,
+                            Price = 30000m,
+                            Quantity = 42
+                        },
+                        new
+                        {
+                            ProductId = 213,
+                            PriceListId = 15,
+                            Price = 24000m,
+                            Quantity = 44
+                        },
+                        new
+                        {
+                            ProductId = 214,
+                            PriceListId = 15,
+                            Price = 51000m,
+                            Quantity = 46
+                        },
+                        new
+                        {
+                            ProductId = 215,
+                            PriceListId = 15,
+                            Price = 35000m,
+                            Quantity = 48
+                        },
+                        new
+                        {
+                            ProductId = 216,
+                            PriceListId = 15,
+                            Price = 34000m,
+                            Quantity = 50
+                        },
+                        new
+                        {
+                            ProductId = 217,
+                            PriceListId = 15,
+                            Price = 35000m,
+                            Quantity = 52
+                        },
+                        new
+                        {
+                            ProductId = 218,
+                            PriceListId = 15,
+                            Price = 28000m,
+                            Quantity = 54
+                        },
+                        new
+                        {
+                            ProductId = 219,
+                            PriceListId = 15,
+                            Price = 20000m,
+                            Quantity = 56
+                        },
+                        new
+                        {
+                            ProductId = 220,
+                            PriceListId = 15,
+                            Price = 15000m,
+                            Quantity = 58
+                        },
+                        new
+                        {
+                            ProductId = 221,
+                            PriceListId = 15,
+                            Price = 59000m,
+                            Quantity = 60
+                        },
+                        new
+                        {
+                            ProductId = 222,
+                            PriceListId = 15,
+                            Price = 23000m,
+                            Quantity = 62
+                        },
+                        new
+                        {
+                            ProductId = 223,
+                            PriceListId = 15,
+                            Price = 28000m,
+                            Quantity = 64
+                        },
+                        new
+                        {
+                            ProductId = 224,
+                            PriceListId = 15,
+                            Price = 28000m,
+                            Quantity = 66
+                        },
+                        new
+                        {
+                            ProductId = 225,
+                            PriceListId = 15,
+                            Price = 32000m,
+                            Quantity = 68
+                        },
+                        new
+                        {
+                            ProductId = 226,
+                            PriceListId = 15,
+                            Price = 45000m,
+                            Quantity = 70
+                        },
+                        new
+                        {
+                            ProductId = 227,
+                            PriceListId = 15,
+                            Price = 22000m,
+                            Quantity = 72
+                        },
+                        new
+                        {
+                            ProductId = 228,
+                            PriceListId = 15,
+                            Price = 40000m,
+                            Quantity = 74
+                        },
+                        new
+                        {
+                            ProductId = 229,
+                            PriceListId = 15,
+                            Price = 41000m,
+                            Quantity = 76
+                        },
+                        new
+                        {
+                            ProductId = 230,
+                            PriceListId = 15,
+                            Price = 16000m,
+                            Quantity = 78
+                        },
+                        new
+                        {
+                            ProductId = 231,
+                            PriceListId = 15,
+                            Price = 52000m,
+                            Quantity = 80
+                        },
+                        new
+                        {
+                            ProductId = 232,
+                            PriceListId = 15,
+                            Price = 23000m,
+                            Quantity = 82
+                        },
+                        new
+                        {
+                            ProductId = 233,
+                            PriceListId = 15,
+                            Price = 54000m,
+                            Quantity = 84
+                        },
+                        new
+                        {
+                            ProductId = 234,
+                            PriceListId = 15,
+                            Price = 49000m,
+                            Quantity = 86
+                        },
+                        new
+                        {
+                            ProductId = 235,
+                            PriceListId = 15,
+                            Price = 38000m,
+                            Quantity = 88
+                        },
+                        new
+                        {
+                            ProductId = 236,
+                            PriceListId = 15,
+                            Price = 24000m,
+                            Quantity = 90
+                        },
+                        new
+                        {
+                            ProductId = 237,
+                            PriceListId = 15,
+                            Price = 65000m,
+                            Quantity = 92
+                        },
+                        new
+                        {
+                            ProductId = 238,
+                            PriceListId = 15,
+                            Price = 64000m,
+                            Quantity = 94
+                        },
+                        new
+                        {
+                            ProductId = 239,
+                            PriceListId = 15,
+                            Price = 40000m,
+                            Quantity = 96
+                        },
+                        new
+                        {
+                            ProductId = 240,
+                            PriceListId = 15,
+                            Price = 22000m,
+                            Quantity = 98
+                        },
+                        new
+                        {
+                            ProductId = 241,
+                            PriceListId = 15,
+                            Price = 19000m,
+                            Quantity = 100
+                        },
+                        new
+                        {
+                            ProductId = 242,
+                            PriceListId = 15,
+                            Price = 50000m,
+                            Quantity = 102
+                        },
+                        new
+                        {
+                            ProductId = 243,
+                            PriceListId = 15,
+                            Price = 31000m,
+                            Quantity = 104
+                        },
+                        new
+                        {
+                            ProductId = 244,
+                            PriceListId = 15,
+                            Price = 48000m,
+                            Quantity = 106
                         });
                 });
 
@@ -1700,6 +2603,314 @@ namespace SalesTrend.WPF.Migrations
                             ProductId = 15,
                             Article = "15KF42",
                             Name = "Электрическая зубная щетка",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            Article = "1KF42",
+                            Name = "Смартфон",
+                            ProductTypeId = 1
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            Article = "2KF42",
+                            Name = "Ноутбук",
+                            ProductTypeId = 4
+                        },
+                        new
+                        {
+                            ProductId = 23,
+                            Article = "3KF42",
+                            Name = "Планшет",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            Article = "4KF42",
+                            Name = "Телевизор",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 25,
+                            Article = "5KF42",
+                            Name = "Наушники",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 26,
+                            Article = "6KF42",
+                            Name = "Камера",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 27,
+                            Article = "7KF42",
+                            Name = "Фотоаппарат",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 28,
+                            Article = "8KF42",
+                            Name = "Монитор",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 29,
+                            Article = "9KF42",
+                            Name = "Принтер",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 210,
+                            Article = "10KF42",
+                            Name = "Роутер",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 211,
+                            Article = "11KF42",
+                            Name = "Смарт-часы",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 212,
+                            Article = "12KF42",
+                            Name = "Электронная книга",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 213,
+                            Article = "13KF42",
+                            Name = "Умный домофон",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 214,
+                            Article = "14KF42",
+                            Name = "Аккумулятор",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 215,
+                            Article = "15KF42",
+                            Name = "Портативная зарядка",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 216,
+                            Article = "16KF42",
+                            Name = "Гарнитура",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 217,
+                            Article = "17KF42",
+                            Name = "Bluetooth-динамик",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 218,
+                            Article = "18KF42",
+                            Name = "Веб-камера",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 219,
+                            Article = "19KF42",
+                            Name = "Флеш-накопитель",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 220,
+                            Article = "20KF42",
+                            Name = "SSD-накопитель",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 221,
+                            Article = "21KF42",
+                            Name = "Внешний жесткий диск",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 222,
+                            Article = "22KF42",
+                            Name = "Игровая консоль",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 223,
+                            Article = "23KF42",
+                            Name = "VR-шлем",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 224,
+                            Article = "24KF42",
+                            Name = "Смарт-телевизор",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 225,
+                            Article = "25KF42",
+                            Name = "Микрофон",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 226,
+                            Article = "26KF42",
+                            Name = "Тонер-картридж",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 227,
+                            Article = "27KF42",
+                            Name = "Манипулятор (мышь, трекбол)",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 228,
+                            Article = "28KF42",
+                            Name = "Адаптер Wi-Fi",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 229,
+                            Article = "29KF42",
+                            Name = "Видеокарта",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 230,
+                            Article = "30KF42",
+                            Name = "Процессор",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 231,
+                            Article = "31KF42",
+                            Name = "Материнская плата",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 232,
+                            Article = "32KF42",
+                            Name = "Оперативная память (RAM)",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 233,
+                            Article = "33KF42",
+                            Name = "Компьютерная мышь",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 234,
+                            Article = "34KF42",
+                            Name = "Клавиатура",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 235,
+                            Article = "35KF42",
+                            Name = "USB-хаб",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 236,
+                            Article = "36KF42",
+                            Name = "HDMI-кабель",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 237,
+                            Article = "37KF42",
+                            Name = "Сетевой фильтр",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 238,
+                            Article = "38KF42",
+                            Name = "Электронный браслет",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 239,
+                            Article = "39KF42",
+                            Name = "Внешний оптический привод",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 240,
+                            Article = "40KF42",
+                            Name = "Игровой контроллер",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 241,
+                            Article = "41KF42",
+                            Name = "Стабилизатор напряжения",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 242,
+                            Article = "42KF42",
+                            Name = "Термопаста",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 243,
+                            Article = "43KF42",
+                            Name = "Солнечная батарея",
+                            ProductTypeId = 5
+                        },
+                        new
+                        {
+                            ProductId = 244,
+                            Article = "44KF42",
+                            Name = "GPS-навигатор",
                             ProductTypeId = 5
                         });
                 });

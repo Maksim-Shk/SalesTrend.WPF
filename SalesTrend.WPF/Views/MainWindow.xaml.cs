@@ -59,8 +59,8 @@ namespace SalesTrend.WPF.Views
 
         private void MenuItem_Click_ShowKmeansClick(object sender, RoutedEventArgs e)
         {
-            //var kmeans = new ClusterAnalysisView();
-            //kmeans.Show();
+            var kmeans = new ClusterAnalysisView();
+            kmeans.Show();
         }
         private void MenuItem_Click_ShowKmeansTableClick(object sender, RoutedEventArgs e)
         {
